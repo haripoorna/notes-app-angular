@@ -1,1 +1,13 @@
-<p>notes-list works!</p>
+<ng-container>
+    <ul>
+        <li *ngFor = "let item of noteData">
+            <h6>
+                {{item.title}}
+            </h6>
+            <p>
+                <span>{{item.timeStamp}} </span>
+                <span>{{item.content}}</span>
+            </p>
+        </li>
+    </ul>
+</ng-container>
